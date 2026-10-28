@@ -1,0 +1,146 @@
+{
+  "dataset": {
+    "total_records": 118614,
+    "test_records": 23723,
+    "test_malicious_count": 1277,
+    "test_normal_count": 22446,
+    "class_imbalance_ratio": 0.05383850135734399
+  },
+  "models": [
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9695654006660204,
+      "precision_malicious": 0.6791478373143964,
+      "recall_malicious": 0.8238057948316366,
+      "f1_malicious": 0.7445152158527955,
+      "precision_weighted": 0.9731278421394415,
+      "recall_weighted": 0.9695654006660204,
+      "f1_weighted": 0.9709372888387948,
+      "confusion_matrix": [
+        [
+          21949,
+          497
+        ],
+        [
+          225,
+          1052
+        ]
+      ],
+      "train_time_seconds": 12.97
+    },
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.8787674408801585,
+      "precision_malicious": 0.2717670568084499,
+      "recall_malicious": 0.745497259201253,
+      "f1_malicious": 0.398326359832636,
+      "precision_weighted": 0.9455915187705455,
+      "recall_weighted": 0.8787674408801585,
+      "f1_weighted": 0.9038333445601797,
+      "confusion_matrix": [
+        [
+          19895,
+          2551
+        ],
+        [
+          325,
+          952
+        ]
+      ],
+      "train_time_seconds": 0.2
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.9407747755342916,
+      "precision_malicious": 0.4704251386321627,
+      "recall_malicious": 0.7971808927173062,
+      "f1_malicious": 0.5916884626562046,
+      "precision_weighted": 0.9601263283861025,
+      "recall_weighted": 0.9407747755342916,
+      "f1_weighted": 0.9478112386526386,
+      "confusion_matrix": [
+        [
+          21300,
+          1146
+        ],
+        [
+          259,
+          1018
+        ]
+      ],
+      "train_time_seconds": 0.59
+    },
+    {
+      "model": "SVM (Linear)",
+      "accuracy": 0.8896851157104919,
+      "precision_malicious": 0.29153702551337896,
+      "recall_malicious": 0.7337509788566954,
+      "f1_malicious": 0.41727900244934313,
+      "precision_weighted": 0.9461780139849962,
+      "recall_weighted": 0.8896851157104919,
+      "f1_weighted": 0.910987656541288,
+      "confusion_matrix": [
+        [
+          20169,
+          2277
+        ],
+        [
+          340,
+          937
+        ]
+      ],
+      "train_time_seconds": 0.42
+    }
+  ],
+  "primary_model": "Random Forest",
+  "feature_names": [
+    "employee_department",
+    "employee_campus",
+    "employee_position",
+    "employee_origin_country",
+    "employee_seniority_years",
+    "is_contractor",
+    "employee_classification",
+    "has_foreign_citizenship",
+    "has_criminal_record",
+    "has_medical_history",
+    "total_printed_pages",
+    "num_printed_pages_off_hours",
+    "total_files_burned",
+    "burned_from_other",
+    "is_abroad",
+    "trip_day_number",
+    "hostility_country_level",
+    "num_entries",
+    "num_unique_campus",
+    "late_exit_flag",
+    "entry_during_weekend",
+    "off_hours_print_ratio",
+    "files_burned_per_entry"
+  ],
+  "feature_importances": [
+    0.03825623540691593,
+    0.019558298710600275,
+    0.05255068604942465,
+    0.04747611255667865,
+    0.05437781762515982,
+    0.008027840270076969,
+    0.024564356277064114,
+    0.009070515922946396,
+    0.005509885784839379,
+    0.0066388518983312534,
+    0.14937083104527019,
+    0.028917301206083646,
+    0.22322703551016576,
+    0.026944303126782355,
+    0.004623559430303115,
+    0.007185688311351846,
+    0.013406599584125772,
+    0.04467734338488535,
+    0.059799849381891736,
+    0.0,
+    0.019366060678692492,
+    0.0556863983902839,
+    0.10076442944812629
+  ]
+}

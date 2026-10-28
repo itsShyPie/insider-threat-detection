@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+data/insider_threat_clean_dataset.csv
+models/*.pkl
+batch_results.csv

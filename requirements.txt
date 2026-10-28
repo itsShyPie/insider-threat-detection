@@ -1,0 +1,13 @@
+# Core ML & data
+scikit-learn==1.4.2
+pandas==2.2.2
+numpy==1.26.4
+
+# Plotting
+matplotlib==3.8.4
+
+# Prototype UI (used by app.py)
+streamlit==1.35.0
+
+# Plotting helper used by Streamlit
+plotly==5.22.0
